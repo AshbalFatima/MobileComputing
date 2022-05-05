@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ConstraintLinearAndRelativeLayouts-Android</string>
+    <string name="Btn1">Button-1</string>
+    <string name="Btn2">Button-2</string>
+    <string name="Btn3">Button-3</string>
+    <string name="Btn4">Button-4</string>
+    <string name="myText">Linear vertical layout</string>
+    <string name = "myText1">Without weight</string>
+
+</resources>
