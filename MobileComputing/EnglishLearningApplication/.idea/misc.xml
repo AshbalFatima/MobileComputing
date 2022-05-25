@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/drawable/custombutton.xml" value="0.307" />
         <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/layout/activity_displayitem.xml" value="0.25" />
+        <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/layout/activity_end.xml" value="0.46328125" />
         <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/layout/activity_exam.xml" value="0.27445652173913043" />
         <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/layout/activity_learning.xml" value="0.27445652173913043" />
         <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/layout/activity_main.xml" value="0.36155913978494625" />
+        <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/layout/alphabets.xml" value="0.4296875" />
         <entry key="..\:/Users/ITexpert/AndroidStudioProjects/BeSmartOnlineLearning/app/src/main/res/layout/custombutton.xml" value="0.17395833333333333" />
       </map>
     </option>

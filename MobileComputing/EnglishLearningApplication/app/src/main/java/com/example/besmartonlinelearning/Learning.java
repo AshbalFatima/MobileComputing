@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -34,6 +35,7 @@ public class Learning extends AppCompatActivity implements View.OnClickListener{
     Button x;
     Button y;
     Button z;
+    private static final String TAG="ActivityLearn";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,165 +96,128 @@ public class Learning extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
+        Intent itt=new Intent(Learning.this , Alphabets.class);
         switch (view.getId())
         {
             case R.id.button:
-                Intent intent=new Intent(this, displayitem.class);
-                intent.putExtra("text", "A");
-                intent.putExtra("picture", R.drawable.a);
-                startActivity(intent);
+                itt.putExtra("input","a");
                 break;
             case R.id.button4:
-                Intent intentb=new Intent(this, displayitem.class);
-                intentb.putExtra("text", "B");
-                intentb.putExtra("picture", R.drawable.b);
-                startActivity(intentb);
+                itt.putExtra("input","b");
                 break;
             case R.id.button2:
-                Intent intentc=new Intent(this, displayitem.class);
-                intentc.putExtra("text", "C");
-                intentc.putExtra("picture", R.drawable.c);
-                startActivity(intentc);
+                itt.putExtra("input","c");
                 break;
             case R.id.button3:
-                Intent intentd=new Intent(this, displayitem.class);
-                intentd.putExtra("text", "D");
-                intentd.putExtra("picture", R.drawable.d);
-                startActivity(intentd);
+                itt.putExtra("input","d");
                 break;
             case R.id.button5:
-                Intent intente=new Intent(this, displayitem.class);
-                intente.putExtra("text", "E");
-                intente.putExtra("picture", R.drawable.e);
-                startActivity(intente);
+                itt.putExtra("input","e");
                 break;
             case R.id.button6:
-                Intent intentf=new Intent(this, displayitem.class);
-                intentf.putExtra("text", "F");
-                intentf.putExtra("picture", R.drawable.f);
-                startActivity(intentf);
+                itt.putExtra("input","f");
                 break;
             case R.id.button7:
-                Intent intentg=new Intent(this, displayitem.class);
-                intentg.putExtra("text", "G");
-                intentg.putExtra("picture", R.drawable.g);
-                startActivity(intentg);
+                itt.putExtra("input","g");
                 break;
             case R.id.button8:
-                Intent intenth=new Intent(this, displayitem.class);
-                intenth.putExtra("text", "H");
-                intenth.putExtra("picture", R.drawable.h);
-                startActivity(intenth);
+                itt.putExtra("input","h");
                 break;
             case R.id.button9:
-                Intent intenti=new Intent(this, displayitem.class);
-                intenti.putExtra("text", "I");
-                intenti.putExtra("picture", R.drawable.i);
-                startActivity(intenti);
+                itt.putExtra("input","i");
                 break;
             case R.id.button10:
-                Intent intentj=new Intent(this, displayitem.class);
-                intentj.putExtra("text", "J");
-                intentj.putExtra("picture", R.drawable.j);
-                startActivity(intentj);
+                itt.putExtra("input","j");
                 break;
             case R.id.button11:
-                Intent intentk=new Intent(this, displayitem.class);
-                intentk.putExtra("text", "K");
-                intentk.putExtra("picture", R.drawable.k);
-                startActivity(intentk);
+                itt.putExtra("input","k");
                 break;
             case R.id.button13:
-                Intent intentl=new Intent(this, displayitem.class);
-                intentl.putExtra("text", "L");
-                intentl.putExtra("picture", R.drawable.l);
-                startActivity(intentl);
+                itt.putExtra("input","l");
                 break;
             case R.id.button12:
-                Intent intentm=new Intent(this, displayitem.class);
-                intentm.putExtra("text", "M");
-                intentm.putExtra("picture", R.drawable.m);
-                startActivity(intentm);
+                itt.putExtra("input","m");
                 break;
             case R.id.button14:
-                Intent intentn=new Intent(this, displayitem.class);
-                intentn.putExtra("text", "N");
-                intentn.putExtra("picture", R.drawable.n);
-                startActivity(intentn);
+                itt.putExtra("input","n");
                 break;
             case R.id.button15:
-                Intent intento=new Intent(this, displayitem.class);
-                intento.putExtra("text", "O");
-                intento.putExtra("picture", R.drawable.o);
-                startActivity(intento);
+                itt.putExtra("input","o");
                 break;
             case R.id.button16:
-                Intent intentp=new Intent(this, displayitem.class);
-                intentp.putExtra("text", "P");
-                intentp.putExtra("picture", R.drawable.p);
-                startActivity(intentp);
+                itt.putExtra("input","p");
                 break;
             case R.id.button17:
-                Intent intentq=new Intent(this, displayitem.class);
-                intentq.putExtra("text", "Q");
-                intentq.putExtra("picture", R.drawable.q);
-                startActivity(intentq);
+                itt.putExtra("input","q");
                 break;
             case R.id.button18:
-                Intent intentr=new Intent(this, displayitem.class);
-                intentr.putExtra("text", "R");
-                intentr.putExtra("picture", R.drawable.r);
-                startActivity(intentr);
+                itt.putExtra("input","r");
                 break;
             case R.id.button19:
-                Intent intents=new Intent(this, displayitem.class);
-                intents.putExtra("text", "S");
-                intents.putExtra("picture", R.drawable.s);
-                startActivity(intents);
+                itt.putExtra("input","s");
                 break;
             case R.id.button20:
-                Intent intentt=new Intent(this, displayitem.class);
-                intentt.putExtra("text", "T");
-                intentt.putExtra("picture", R.drawable.t);
-                startActivity(intentt);
+                itt.putExtra("input","t");
                 break;
             case R.id.button21:
-                Intent intentu=new Intent(this, displayitem.class);
-                intentu.putExtra("text", "U");
-                intentu.putExtra("picture", R.drawable.u);
-                startActivity(intentu);
+                itt.putExtra("input","u");
                 break;
             case R.id.button22:
-                Intent intentv=new Intent(this, displayitem.class);
-                intentv.putExtra("text", "V");
-                intentv.putExtra("picture", R.drawable.v);
-                startActivity(intentv);
+                itt.putExtra("input","v");
                 break;
             case R.id.button23:
-                Intent intentw=new Intent(this, displayitem.class);
-                intentw.putExtra("text", "W");
-                intentw.putExtra("picture", R.drawable.w);
-                startActivity(intentw);
+                itt.putExtra("input","w");
                 break;
             case R.id.button24:
-                Intent intentx=new Intent(this, displayitem.class);
-                intentx.putExtra("text", "X");
-                intentx.putExtra("picture", R.drawable.x);
-                startActivity(intentx);
+                itt.putExtra("input","x");
                 break;
             case R.id.button25:
-                Intent intenty=new Intent(this, displayitem.class);
-                intenty.putExtra("text", "Y");
-                intenty.putExtra("picture", R.drawable.y);
-                startActivity(intenty);
+                itt.putExtra("input","y");
                 break;
-            case R.id.button26:
-                Intent intentz=new Intent(this, displayitem.class);
-                intentz.putExtra("text", "Z");
-                intentz.putExtra("picture", R.drawable.z);
-                startActivity(intentz);
-                break;
-
+            default:
+                itt.putExtra("input","z");
         }
+        startActivity(itt);
+    }
+    @Override
+
+    protected void onStart(){
+        super.onStart();
+        Log.d(TAG, " onStart Learn");
+    }
+
+    @Override
+
+    protected void onResume(){
+        super.onResume();
+        Log.d(TAG, " onResume Learn");
+    }
+
+    @Override
+
+    protected void onPause(){
+        super.onPause();
+        Log.d(TAG, " onPause Learn");
+    }
+
+    @Override
+
+    protected void onStop(){
+        super.onStop();
+        Log.d(TAG, " onStop Learn");
+    }
+
+    @Override
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d(TAG, " onDestroy Learn");
+    }
+
+    @Override
+
+    protected void onRestart(){
+        super.onRestart();
+        Log.d(TAG, " onRestart Learn");
     }
 }

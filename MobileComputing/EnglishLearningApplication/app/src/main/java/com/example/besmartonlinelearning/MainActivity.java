@@ -3,9 +3,9 @@ package com.example.besmartonlinelearning;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,40 +13,90 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button Learn;
     Button Test;
     Button repo;
-
+    private static final String TAG="MainActivity";
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Learn = findViewById(R.id.button);
+        Learn = (Button) findViewById(R.id.learn);
         Test = findViewById(R.id.button2);
         repo = findViewById(R.id.button3);
-        Learn.setOnClickListener((View.OnClickListener) this);
-        Test.setOnClickListener((View.OnClickListener) this);
-        repo.setOnClickListener((View.OnClickListener) this);
+
+        Learn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intmove = new Intent(MainActivity.this, Learning.class);
+                startActivity(intmove);
+            }
+
+        });
+        Test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intmove = new Intent(MainActivity.this, Exam.class);
+                startActivity(intmove);
+            }
+
+        });
+
+        repo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/AshbalFatima/MobileComputing/tree/main/MobileComputing/EnglishLearningApplication"));
+                startActivity(browserIntent);
+            }
+        });
+
     }
+        public void openLearning() {
+            Intent intent = new Intent(this, Learning.class);
+            startActivity(intent);
+        }
+        @Override
+
+        protected void onStart(){
+            super.onStart();
+            Log.d(TAG, " onStart Main");
+        }
+
+        @Override
+
+        protected void onResume(){
+            super.onResume();
+            Log.d(TAG, " onResume Main");
+        }
+
+        @Override
+
+        protected void onPause(){
+            super.onPause();
+            Log.d(TAG, " onPause Main");
+        }
+
+        @Override
+
+        protected void onStop(){
+            super.onStop();
+            Log.d(TAG, " onStop Main");
+        }
+
+        @Override
+
+        protected void onDestroy(){
+            super.onDestroy();
+            Log.d(TAG, " onDestroy Main");
+        }
+
+        @Override
+
+        protected void onRestart(){
+            super.onRestart();
+            Log.d(TAG, " onRestart Main");
+        }
+
 
     @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.button:
-                Intent intent1=new Intent(this, Learning.class);
-                startActivity(intent1);
-                break;
-            case R.id.button2:
-                Intent intent2=new Intent(this, Exam.class);
-                startActivity(intent2);
-                break;
-            case R.id.button3:
-                Uri webpage=Uri.parse("https://github.com/AshbalFatima/MobileComputing/tree/main/MobileComputing/EnglishLearningApplication");
-                Intent intent3=new Intent(Intent.ACTION_VIEW, webpage);
-                startActivity(intent3);
-                break;
-        }
-    }
+    public void onClick(View v) {
 
-    public void openLearning() {
-        Intent intent = new Intent(this, Learning.class);
-        startActivity(intent);
     }
 }
