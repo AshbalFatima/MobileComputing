@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "BeSmartOnlineLearning"
+rootProject.name = "PhonicsApp"
 include ':app'
